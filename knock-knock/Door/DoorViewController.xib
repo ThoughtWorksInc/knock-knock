@@ -9,45 +9,68 @@
             <connections>
                 <outlet property="atTheDoorTextField" destination="pvQ-45-PO2" id="w7M-vD-23x"/>
                 <outlet property="doorImage" destination="eQH-bJ-PeJ" id="YWc-Pq-Bek"/>
-                <outlet property="ignoreButton" destination="54c-3w-rdm" id="oq1-5u-w54"/>
+                <outlet property="frontDoorImage" destination="eQH-bJ-PeJ" id="fs2-6e-oHE"/>
+                <outlet property="frontDoorTextField" destination="pvQ-45-PO2" id="7Fr-pZ-mL4"/>
                 <outlet property="openButton" destination="WdY-X0-z3i" id="SVd-gc-2AO"/>
+                <outlet property="openFrontDoorButton" destination="WdY-X0-z3i" id="jDa-oS-pSF"/>
+                <outlet property="openUpstairsDoorButton" destination="QPX-xZ-q4P" id="ADu-WO-kqK"/>
+                <outlet property="upstairsDoorImage" destination="tsx-vM-HFx" id="U3M-I0-dDJ"/>
+                <outlet property="upstairsDoorTextField" destination="rBx-lc-Um6" id="Xme-kQ-hP6"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="Hz6-mo-xeY">
-            <rect key="frame" x="0.0" y="0.0" width="254" height="86"/>
+            <rect key="frame" x="0.0" y="0.0" width="254" height="171"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pvQ-45-PO2">
-                    <rect key="frame" x="87" y="51" width="149" height="17"/>
-                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Someone is at the door!" id="cVm-0J-hbC">
+                    <rect key="frame" x="87" y="136" width="111" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="TWSG Front Door" id="cVm-0J-hbC">
                         <font key="font" metaFont="system"/>
                         <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eQH-bJ-PeJ">
+                    <rect key="frame" x="15" y="98" width="59" height="59"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="y09-gP-Ruu"/>
+                </imageView>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rBx-lc-Um6">
+                    <rect key="frame" x="87" y="51" width="130" height="17"/>
+                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="TWSG Upstairs Door" id="DiH-zj-ruX">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QPX-xZ-q4P">
+                    <rect key="frame" x="83" y="14" width="157" height="32"/>
+                    <buttonCell key="cell" type="push" title="Open" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="NGj-sX-34u">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                </button>
+                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tsx-vM-HFx">
+                    <rect key="frame" x="15" y="13" width="59" height="59"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="388-vl-BIB"/>
+                </imageView>
+                <box verticalHuggingPriority="750" fixedFrame="YES" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="kz6-dz-vXe">
+                    <rect key="frame" x="0.0" y="83" width="254" height="5"/>
+                    <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                    <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <font key="titleFont" metaFont="system"/>
+                </box>
                 <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WdY-X0-z3i">
-                    <rect key="frame" x="83" y="14" width="73" height="32"/>
+                    <rect key="frame" x="83" y="99" width="157" height="32"/>
                     <buttonCell key="cell" type="push" title="Open" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="8Ae-tZ-Kv7">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
                 </button>
-                <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="54c-3w-rdm">
-                    <rect key="frame" x="153" y="14" width="79" height="32"/>
-                    <buttonCell key="cell" type="push" title="Ignore" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="xrA-RX-2EV">
-                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="system"/>
-                    </buttonCell>
-                </button>
-                <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eQH-bJ-PeJ">
-                    <rect key="frame" x="15" y="13" width="59" height="59"/>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="y09-gP-Ruu"/>
-                </imageView>
             </subviews>
-            <point key="canvasLocation" x="207" y="290"/>
+            <point key="canvasLocation" x="460" y="367.5"/>
         </customView>
         <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" id="yqF-dL-O53">
             <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>

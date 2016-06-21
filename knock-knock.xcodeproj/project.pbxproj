@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		93058A721D10206700DF9544 /* PopoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93058A711D10206700DF9544 /* PopoverController.swift */; };
 		9313CDE21D0F13DD00326118 /* DoorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9313CDE01D0F13DD00326118 /* DoorViewController.swift */; };
 		9313CDE31D0F13DD00326118 /* DoorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9313CDE11D0F13DD00326118 /* DoorViewController.xib */; };
 		9323F8C41D09C780003D7375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9323F8C31D09C780003D7375 /* AppDelegate.swift */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		93058A711D10206700DF9544 /* PopoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverController.swift; sourceTree = "<group>"; };
 		9313CDE01D0F13DD00326118 /* DoorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoorViewController.swift; path = Door/DoorViewController.swift; sourceTree = "<group>"; };
 		9313CDE11D0F13DD00326118 /* DoorViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = DoorViewController.xib; path = Door/DoorViewController.xib; sourceTree = "<group>"; };
 		9323F8C01D09C780003D7375 /* knock-knock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "knock-knock.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +103,7 @@
 				9323F8C51D09C780003D7375 /* Assets.xcassets */,
 				9323F8C71D09C780003D7375 /* MainMenu.xib */,
 				9313CDE01D0F13DD00326118 /* DoorViewController.swift */,
+				93058A711D10206700DF9544 /* PopoverController.swift */,
 				9313CDE11D0F13DD00326118 /* DoorViewController.xib */,
 				9323F8CA1D09C780003D7375 /* Info.plist */,
 			);
@@ -257,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9313CDE21D0F13DD00326118 /* DoorViewController.swift in Sources */,
+				93058A721D10206700DF9544 /* PopoverController.swift in Sources */,
 				9323F8C41D09C780003D7375 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
