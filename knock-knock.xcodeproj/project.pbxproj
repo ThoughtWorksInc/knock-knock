@@ -15,6 +15,11 @@
 		9323F8C91D09C780003D7375 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9323F8C71D09C780003D7375 /* MainMenu.xib */; };
 		9323F8D41D09C781003D7375 /* knock_knockTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9323F8D31D09C781003D7375 /* knock_knockTests.swift */; };
 		9323F8DF1D09C781003D7375 /* knock_knockUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9323F8DE1D09C781003D7375 /* knock_knockUITests.swift */; };
+		EF523F681D491E4A008C3B08 /* AWSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF523F661D491E4A008C3B08 /* AWSCore.framework */; };
+		EF523F691D491E4A008C3B08 /* AWSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF523F661D491E4A008C3B08 /* AWSCore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF523F6A1D491E4A008C3B08 /* AWSIoT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF523F671D491E4A008C3B08 /* AWSIoT.framework */; };
+		EF523F6B1D491E4A008C3B08 /* AWSIoT.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EF523F671D491E4A008C3B08 /* AWSIoT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		EF523F6F1D491EFE008C3B08 /* AWSConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF523F6E1D491EFE008C3B08 /* AWSConstants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		EF523F6C1D491E4A008C3B08 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				EF523F691D491E4A008C3B08 /* AWSCore.framework in Embed Frameworks */,
+				EF523F6B1D491E4A008C3B08 /* AWSIoT.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		93058A711D10206700DF9544 /* PopoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverController.swift; sourceTree = "<group>"; };
 		9313CDE01D0F13DD00326118 /* DoorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DoorViewController.swift; path = Door/DoorViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +69,9 @@
 		9323F8DA1D09C781003D7375 /* knock-knockUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "knock-knockUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9323F8DE1D09C781003D7375 /* knock_knockUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = knock_knockUITests.swift; sourceTree = "<group>"; };
 		9323F8E01D09C781003D7375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF523F661D491E4A008C3B08 /* AWSCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSCore.framework; path = Carthage/Build/Mac/AWSCore.framework; sourceTree = "<group>"; };
+		EF523F671D491E4A008C3B08 /* AWSIoT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AWSIoT.framework; path = Carthage/Build/Mac/AWSIoT.framework; sourceTree = "<group>"; };
+		EF523F6E1D491EFE008C3B08 /* AWSConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AWSConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +79,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF523F681D491E4A008C3B08 /* AWSCore.framework in Frameworks */,
+				EF523F6A1D491E4A008C3B08 /* AWSIoT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +104,7 @@
 		9323F8B71D09C780003D7375 = {
 			isa = PBXGroup;
 			children = (
+				EF523F6D1D491E6B008C3B08 /* Framework */,
 				9323F8C21D09C780003D7375 /* knock-knock */,
 				9323F8D21D09C781003D7375 /* knock-knockTests */,
 				9323F8DD1D09C781003D7375 /* knock-knockUITests */,
@@ -100,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				9323F8C31D09C780003D7375 /* AppDelegate.swift */,
+				EF523F6E1D491EFE008C3B08 /* AWSConstants.swift */,
 				9323F8C51D09C780003D7375 /* Assets.xcassets */,
 				9323F8C71D09C780003D7375 /* MainMenu.xib */,
 				9313CDE01D0F13DD00326118 /* DoorViewController.swift */,
@@ -128,6 +155,15 @@
 			path = "knock-knockUITests";
 			sourceTree = "<group>";
 		};
+		EF523F6D1D491E6B008C3B08 /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				EF523F661D491E4A008C3B08 /* AWSCore.framework */,
+				EF523F671D491E4A008C3B08 /* AWSIoT.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +174,7 @@
 				9323F8BC1D09C780003D7375 /* Sources */,
 				9323F8BD1D09C780003D7375 /* Frameworks */,
 				9323F8BE1D09C780003D7375 /* Resources */,
+				EF523F6C1D491E4A008C3B08 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -260,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9313CDE21D0F13DD00326118 /* DoorViewController.swift in Sources */,
+				EF523F6F1D491EFE008C3B08 /* AWSConstants.swift in Sources */,
 				93058A721D10206700DF9544 /* PopoverController.swift in Sources */,
 				9323F8C41D09C780003D7375 /* AppDelegate.swift in Sources */,
 			);
@@ -395,6 +433,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = "knock-knock/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtworks.knock-knock";
@@ -407,6 +449,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = "knock-knock/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.thoughtworks.knock-knock";

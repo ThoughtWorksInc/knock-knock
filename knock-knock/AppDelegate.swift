@@ -1,4 +1,5 @@
 import Cocoa
+import AWSCore
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -25,6 +26,14 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     }
     
     func applicationDidFinishLaunching(aNotification: NSNotification) {
+        let credentialProvider = AWSCognitoCredentialsProvider(regionType: AwsRegion, identityPoolId: CognitoIdentityPoolId)
+        
+        let configuration = AWSServiceConfiguration(
+            region: AwsRegion,
+            credentialsProvider: credentialProvider)
+        
+        AWSServiceManager.defaultServiceManager().defaultServiceConfiguration = configuration
+        
         if let button = statusItem.button {
             button.image = NSImage(named: "statusIcon")
             button.image?.template = true // best for dark mode

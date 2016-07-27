@@ -7,15 +7,8 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="DoorViewController" customModule="knock_knock" customModuleProvider="target">
             <connections>
-                <outlet property="atTheDoorTextField" destination="pvQ-45-PO2" id="w7M-vD-23x"/>
-                <outlet property="doorImage" destination="eQH-bJ-PeJ" id="YWc-Pq-Bek"/>
-                <outlet property="frontDoorImage" destination="eQH-bJ-PeJ" id="fs2-6e-oHE"/>
-                <outlet property="frontDoorTextField" destination="pvQ-45-PO2" id="7Fr-pZ-mL4"/>
-                <outlet property="openButton" destination="WdY-X0-z3i" id="SVd-gc-2AO"/>
                 <outlet property="openFrontDoorButton" destination="WdY-X0-z3i" id="jDa-oS-pSF"/>
                 <outlet property="openUpstairsDoorButton" destination="QPX-xZ-q4P" id="ADu-WO-kqK"/>
-                <outlet property="upstairsDoorImage" destination="tsx-vM-HFx" id="U3M-I0-dDJ"/>
-                <outlet property="upstairsDoorTextField" destination="rBx-lc-Um6" id="Xme-kQ-hP6"/>
                 <outlet property="view" destination="Hz6-mo-xeY" id="0bl-1N-x8E"/>
             </connections>
         </customObject>
@@ -35,7 +28,7 @@
                 </textField>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eQH-bJ-PeJ">
                     <rect key="frame" x="15" y="98" width="59" height="59"/>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="y09-gP-Ruu"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="downstairsDoor" id="y09-gP-Ruu"/>
                 </imageView>
                 <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rBx-lc-Um6">
                     <rect key="frame" x="87" y="51" width="130" height="17"/>
@@ -54,7 +47,7 @@
                 </button>
                 <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tsx-vM-HFx">
                     <rect key="frame" x="15" y="13" width="59" height="59"/>
-                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="388-vl-BIB"/>
+                    <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" image="upstairsDoor" id="388-vl-BIB"/>
                 </imageView>
                 <box verticalHuggingPriority="750" fixedFrame="YES" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="kz6-dz-vXe">
                     <rect key="frame" x="0.0" y="83" width="254" height="5"/>
@@ -103,4 +96,8 @@
             </buttonCell>
         </button>
     </objects>
+    <resources>
+        <image name="downstairsDoor" width="128" height="128"/>
+        <image name="upstairsDoor" width="128" height="128"/>
+    </resources>
 </document>
